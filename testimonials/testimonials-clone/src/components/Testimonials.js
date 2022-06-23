@@ -1,16 +1,16 @@
 import React from 'react';
 
-function Testimonials(){
+function Testimonials(props){
     return(
         <section className='testimonials_card'>
-            <img className='card_image' src='https://www.freecodecamp.org/espanol/static/Shawn-bf42c7b909dae3111d18a21870ee6ca5.png' alt='profile_image'/>
+            <img className='card_image' src={props.image} alt='profile_image'/>
             <div className='card_info'>
                 <h3>
-                    <span>Shawn Wang</span> en Singapur <br/>
-                    Ingeniero de Software en <span>Amazon</span>
+                    <span>{props.name}</span> en {props.country} <br/>
+                    {props.job} en <span>{props.company}</span>
                 </h3>
                 <p>
-                "Da miedo cambiar de carrera. Solo gané la confianza de que podía programar trabajando a través de los cientos de horas de lecciones gratuitas en freeCodeCamp. Dentro de un año tuve un trabajo de seis cifras como ingeniero de software. freeCodeCamp cambió mi vida."
+                "{props.testimonials}"
                 </p>
             </div>
         </section>
