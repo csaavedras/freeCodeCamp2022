@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+  background-color: #1b1b31;
+  color: #f5f6f7;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+
+}
+h1 {
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+span {
+  font-weight: bold;
+}
+p {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+main {
+  max-width: 1140px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials_card {
+  margin-top: 30px;
+  max-width: 1050px;
+  display: flex;
+  background-color: #0a0a22;
+}
+.card_image img {
+  width: 100%;
+  height: auto;
+
+}
+.card_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+@media (max-width: 860px) {
+  .testimonials_card {
+    width: 350px;
+    flex-direction: column;
+  }
+}
