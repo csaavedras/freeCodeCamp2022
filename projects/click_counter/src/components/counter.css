@@ -1,0 +1,35 @@
+.counter_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 560px;
+    height: 195px;
+    background-color: #22223B;
+    color: #F2E9E4;
+    border-radius: 50px;
+    font-size: 4rem;
+}
+
+.counter_display {
+    width: 130px;
+    height: 130px;
+    border-radius: 80px;
+    background-color: #9A8C98;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter_container button{
+    font-size: 4rem;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    color: #FFF;
+}
+
+button:hover {
+    color: #F2E9E4;
+}
