@@ -1,4 +1,4 @@
-import './counter.css';
+import './styles/counter.css';
 import React, { useState } from 'react';
 import Button from './Button';
 
@@ -9,11 +9,11 @@ function Counter() {
 
     const addClick = () => {
         setCount(count + 1);
-    }
+    };
 
     const restartClick = () => {
         setCount(0);
-    }
+    };
 
     return(
         <div className="counter_container">
@@ -35,4 +35,3 @@ function Counter() {
 }
 
 export default Counter;
-
