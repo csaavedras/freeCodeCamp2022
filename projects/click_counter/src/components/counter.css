@@ -19,17 +19,3 @@
     align-items: center;
     justify-content: center;
 }
-
-.counter_container button{
-    font-size: 4rem;
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    outline: none;
-    color: #FFF;
-}
-
-button:hover {
-    color: #F2E9E4;
-}

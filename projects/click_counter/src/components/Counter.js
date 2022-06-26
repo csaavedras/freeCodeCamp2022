@@ -1,24 +1,35 @@
-import React, { useState } from 'react';
 import './counter.css';
+import React, { useState } from 'react';
+import Button from './Button';
 
 
-function Counter(props) {
+function Counter() {
 
     const [count, setCount] = useState(0);
 
-    const plusCounter = () => {
+    const addClick = () => {
         setCount(count + 1);
     }
-    const minusCounter = () => {
-        setCount(count - 1);
+
+    const restartClick = () => {
+        setCount(0);
     }
+
     return(
         <div className="counter_container">
-            <button onClick={minusCounter}>-</button>
+            <Button 
+                text='clean'
+                isButtonClick={true}
+                eventClick={restartClick}
+            />
             <div className="counter_display">
               <span>{count}</span>
             </div>
-            <button onClick={plusCounter}>+</button>
+            <Button 
+                text='+'
+                isButtonClick={false}
+                eventClick={addClick}
+            />
         </div>
     );
 }
