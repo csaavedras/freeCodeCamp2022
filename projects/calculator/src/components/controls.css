@@ -1,0 +1,29 @@
+.controls {
+    /* background-color: red; */
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 6px 8px;
+}
+.clean {
+    background-color: #A5A5A5;
+    color: black;
+    width: 168px;
+    height: 75px;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.stack {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
