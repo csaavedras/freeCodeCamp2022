@@ -1,0 +1,11 @@
+.circleButton {
+    width: 76px;
+    height: 76px;
+    border-radius: 50px;
+    background-color: #A5A5A5;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.numbers{
+    background-color: #333333;
+}
