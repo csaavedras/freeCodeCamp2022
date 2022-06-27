@@ -1,9 +1,9 @@
 import './display.css';
 
-function Display(){
+function Display({value}){
   return(
     <div className='display'>
-      <span>0</span>     
+      <span>{value}</span>     
     </div>
   );
 }
