@@ -1,36 +1,43 @@
 import './controls.css'
+import './button.css'
 import Button from './Button';
 
 function Controls(){
+  
+  const handleButton = (e) => {
+    const value = e.target.innerHTML;
+    console.log(value)
+  }
+
   return(
     <div className='controls'>
       <div className='stack'>
-        <button className='clean'>Clean</button>
-        <Button text='%'/>
-        <Button text='/'/>
+        <Button value='Clean' eventClick={handleButton} className='largeButton'/>
+        <Button value='%' eventClick={handleButton} className='circleButton custom'/>
+        <Button value='/' eventClick={handleButton} className='circleButton operation'/>
       </div>
       <div className='stack'>
-        <Button text='7'/>
-        <Button text='8'/>
-        <Button text='9'/>
-        <Button text='X'/>
+        <Button value='7' eventClick={handleButton} className='circleButton numbers'/>
+        <Button value='8' eventClick={handleButton} className='circleButton numbers'/>
+        <Button value='9' eventClick={handleButton} className='circleButton numbers'/>
+        <Button value='X' eventClick={handleButton} className='circleButton operation'/>
       </div>
       <div className='stack'>
-        <Button text='4'/>
-        <Button text='5'/>
-        <Button text='6'/>
-        <Button text='-'/>
+        <Button value='4' eventClick={handleButton} className='circleButton numbers'/>
+        <Button value='5' eventClick={handleButton} className='circleButton numbers'/>
+        <Button value='6' eventClick={handleButton} className='circleButton numbers'/>
+        <Button value='-' eventClick={handleButton} className='circleButton operation'/>
       </div>
       <div className='stack'>
-        <Button text='1'/>
-        <Button text='2'/>
-        <Button text='3'/>
-        <Button text='+'/>
+        <Button value='1' eventClick={handleButton} className='circleButton numbers'/>
+        <Button value='2' eventClick={handleButton} className='circleButton numbers'/>
+        <Button value='3' eventClick={handleButton} className='circleButton numbers'/>
+        <Button value='+' eventClick={handleButton} className='circleButton operation'/>
       </div>
       <div className='stack'>
-        <button className='clean'>0</button>
-        <Button text=','/>
-        <Button text='='/>
+        <Button value='0' eventClick={handleButton} className='largeButton numbers'/>
+        <Button value=',' eventClick={handleButton} className='circleButton numbers'/>
+        <Button value='=' eventClick={handleButton} className='circleButton operation'/>
       </div>
     </div>
   );
