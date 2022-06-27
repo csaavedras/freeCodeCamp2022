@@ -3,9 +3,10 @@ import Display from './components/Display';
 import Controls from './components/Controls';
 
 function App() {
+
   return (
     <div className="container">
-      <Display />
+      <Display value='0'/>
       <Controls />
     </div>
   );
