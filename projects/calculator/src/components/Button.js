@@ -1,9 +1,12 @@
 import './button.css'
 
-function Button({text}){
+function Button({value, eventClick, className}){
   return(
-      <button className='circleButton'>
-        {text}
+      <button 
+        className={className}
+        onClick={eventClick}
+      >
+        {value}
       </button>
   );
 }
